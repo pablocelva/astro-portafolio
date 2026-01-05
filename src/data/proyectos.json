@@ -67,8 +67,9 @@
         "highlight": true
     },
     {
+        "id": "help-app-ux-ui-design",
         "title": "HelpApp",
-        "slug": "helpapp-ux-ui-design",
+        "slug": "help-app-ux-ui-design",
         "type": ["ux", "ui"],
         "status": "design",
         "year": 2025,
@@ -99,6 +100,7 @@
         "highlight": false
     },
     {
+        "id": "jardin-de-los-suenos-website-full-stack",
         "title": "Jardin de los Sueños",
         "slug": "jardin-de-los-suenos-website-full-stack",
         "type": ["frontend", "backend"],
