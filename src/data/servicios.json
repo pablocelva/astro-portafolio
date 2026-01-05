@@ -1,0 +1,58 @@
+[
+    {
+        "id": "frontend",
+        "title": "Desarrollo Frontend",
+        "description": "Interfaces modernas, accesibles y performantes.",
+        "tools": ["HTML", "CSS", "JS", "React", "Vue", "Astro"],
+        "useCases": ["Landing pages", "Dashboards", "Web apps"],
+        "tags": ["HTML", "CSS", "JS", "React", "Vue", "Astro"]
+    },
+    {
+        "id": "backend",
+        "title": "Desarrollo Backend",
+        "description": "APIs, Microservicios y base de datos.",
+        "tools": ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+        "useCases": ["APIs", "Microservicios", "Bases de datos"],
+        "tags": ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+    },
+    {
+        "id": "mobile",
+        "title": "Desarrollo Mobile",
+        "description": "Aplicaciones nativas e híbridas para iOS y Android.",
+        "tools": ["React Native", "Kotlin", "Android Studio", "Swift"],
+        "useCases": ["Apps nativas", "Apps híbridas"],
+        "tags": ["React Native", "Kotlin", "Android Studio", "Swift"]
+    },
+    {
+        "id": "design",
+        "title": "Diseño Gráfico",
+        "description": "Diseño de interfaces, logotipos, iconos, etc.",
+        "tools": ["Figma", "Sketch", "Adobe XD"],
+        "useCases": ["Logotipos", "Iconos", "UI/UX"],
+        "tags": ["Figma", "Sketch", "Adobe XD"]
+    },
+    {
+        "id": "data",
+        "title": "Análisis y Modelado de Datos",
+        "description": "Limpieza, análisis y modelado predictivo para toma de decisiones.",
+        "tools": ["Python", "Pandas", "scikit-learn"],
+        "useCases": ["Predicción", "Clasificación", "Dashboards"],
+        "tags": ["Python", "Pandas", "scikit-learn"]
+    },
+    {
+        "id": "gamedevelopment",
+        "title": "Desarrollo de Videojuegos",
+        "description": "Creación de videojuegos para PC, consolas y dispositivos móviles.",
+        "tools": ["Unity", "Unreal Engine", "C#", "C++"],
+        "useCases": ["Videojuegos", "Simulaciones", "Realidad Virtual"],
+        "tags": ["Unity", "Unreal Engine", "C#", "C++"]
+    },
+    {
+        "id": "creativecode",
+        "title": "Programación Creativa",
+        "description": "Creación de experiencias interactivas y arte digital.",
+        "tools": ["Processing", "p5.js", "OpenFrameworks"],
+        "useCases": ["Experiencias interactivas", "Arte digital", "Visualizaciones"],
+        "tags": ["Processing", "p5.js", "OpenFrameworks"]
+    }
+]

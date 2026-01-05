@@ -1,0 +1,16 @@
+---
+const { id, title, description, tags = [] } = Astro.props;
+---
+
+<article class="service-card">
+  <h3>
+    <a href={`/services/${id}`}>{title}</a>
+  </h3>
+  <p>{description}</p>
+
+  {tags.length > 0 && (
+    <ul class="tags">
+      {tags.map(tag => <li>{tag}</li>)}
+    </ul>
+  )}
+</article>

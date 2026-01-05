@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import servicios from "../data/servicios.json";
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<Layout title="Servicios · Pablo Lambert">
+  <section class="services-section">
+    <h1>Servicios</h1>
+    <p class="subtitle">
+      Diseño, desarrollo y soluciones digitales con foco en calidad y claridad.
+    </p>
+
+    <div class="services-grid">
+      {servicios.map(servicio => (
+        <ServiceCard {...servicio} />
+      ))}
+    </div>
+  </section>
+</Layout>

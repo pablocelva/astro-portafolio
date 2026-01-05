@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import proyectos from "../../data/proyectos.json";
+
+export async function getStaticPaths() {
+  return proyectos.map(project => ({
+    params: { slug: project.slug },
+    props: project
+  }));
+}
+
+const {
+  title,
+  description,
+  tags = [],
+  content = {}
+} = Astro.props;
+---
+
+<Layout title={title}>
+  <article class="project-page">
+    <h1>{title}</h1>
+    <p>{description}</p>
+
+    {tags.length > 0 && (
+      <ul class="tags">
+        {tags.map(tag => <li>{tag}</li>)}
+      </ul>
+    )}
+
+    <section>
+      <h2>Overview</h2>
+      <p>{content.overview}</p>
+      <p>{content.shortDescription}</p>
+      <p>{content.description}</p>
+      <p>{content.year}</p>
+      <p>{content.status}</p>
+
+    </section>
+
+    <section>
+      <h2>Stack</h2>
+      <ul>
+        {content.stack?.map(tech => (
+          <li>{tech}</li>
+        ))}
+      </ul>
+    </section>
+  </article>
+</Layout>

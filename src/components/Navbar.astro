@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <a href="/" class="logo">
+    <h1>celva.dev</h1>
+  </a>
+
+  <!-- Botón mobile -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Links -->
+  <ul class="nav-links">
+    <li><a href="/projects">Proyectos</a></li>
+    <li><a href="/services">Servicios</a></li>
+    <li><a href="/about">Sobre mí</a></li>
+    <li><a href="/contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const links = document.querySelector(".nav-links");
+
+  toggle?.addEventListener("click", () => {
+    toggle.classList.toggle("open");
+    links.classList.toggle("open");
+  });
+</script>

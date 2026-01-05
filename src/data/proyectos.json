@@ -1,0 +1,133 @@
+[
+    {
+        "id": "celvaprod",
+        "title": "CELVAPROD",
+        "slug": "celvaprod",
+        "type": ["frontend", "threejs"],
+        "status": "production",
+        "year": 2025,
+        "description": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+        "shortDescription": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+        "tags": ["React", "Three.js"],
+        "stack": {
+        "frontend": ["React", "Three.js", "Vite"],
+        "backend": ["None"],
+        "db": ["None"]
+        },
+        "features": [
+        "Modelos 3D interactivos",
+        "Animaciones suaves",
+        "Efectos de sombra"
+        ],
+        "images": [
+        "/images/celvaprod/home.png",
+        "/images/celvaprod/architecture.png"
+        ],
+        "links": {
+        "demo": null,
+        "frontendRepo": "https://github.com/...",
+        "backendRepo": "none",
+        "docs": "/projects/celvaprod"
+        },
+        "services": ["frontend", "threejs"],
+        "highlight": true
+    },
+    {
+        "id": "flight-on-time",
+        "title": "FlightOnTime",
+        "slug": "flight-on-time",
+        "type": ["fullstack", "machine-learning"],
+        "status": "mvp",
+        "year": 2025,
+        "description": "Sistema predictivo que estima retrasos de vuelos usando datos históricos y modelos de Machine Learning.",
+        "shortDescription": "Predicción de retrasos de vuelos con ML",
+        "tags": ["ML", "Python", "Spring Boot", "ONNX", "FastAPI"],
+        "stack": {
+        "frontend": ["React", "Vite"],
+        "backend": ["Java", "Spring Boot"],
+        "ml": ["Python", "scikit-learn"],
+        "db": ["PostgreSQL"]
+        },
+        "features": [
+        "Predicción de retraso en tiempo real",
+        "API REST desacoplada",
+        "Modelo exportado a ONNX"
+        ],
+        "images": [
+        "/images/flightontime/home.png",
+        "/images/flightontime/architecture.png"
+        ],
+        "links": {
+        "demo": null,
+        "frontendRepo": "https://github.com/...",
+        "backendRepo": "https://github.com/...",
+        "docs": "/projects/flight-on-time"
+        },
+        "services": ["data-analysis", "backend", "ml"],
+        "highlight": true
+    },
+    {
+        "title": "HelpApp",
+        "slug": "helpapp-ux-ui-design",
+        "type": ["ux", "ui"],
+        "status": "design",
+        "year": 2025,
+        "description": "Diseño de experiencia de usuario y interfaz para una aplicación de ayuda.",
+        "shortDescription": "Diseño UX/UI para aplicación de ayuda.",
+        "tags": ["Figma", "UI Design", "UX Research"],
+        "stack": {
+            "frontend": [],
+            "backend": [],
+            "db": []
+        },
+        "features": [
+            "Diseño de interfaz intuitiva",
+            "Prototipos interactivos",
+            "Investigación UX"
+        ],
+        "images": [
+            "/images/helpapp/ux-ui/home.png",
+            "/images/helpapp/ux-ui/architecture.png"
+        ],
+        "links": {
+            "demo": null,
+            "frontendRepo": null,
+            "backendRepo": null,
+            "docs": "/projects/helpapp-ux-ui-design"
+        },
+        "services": ["ux", "ui"],
+        "highlight": false
+    },
+    {
+        "title": "Jardin de los Sueños",
+        "slug": "jardin-de-los-suenos-website-full-stack",
+        "type": ["frontend", "backend"],
+        "status": "mvp",
+        "year": 2025,
+        "description": "Diseño y desarrollo de una página web interactiva con contenido personalizado y experiencia de usuario.",
+        "shortDescription": "Página web interactiva con contenido personalizado y experiencia de usuario.",
+        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+        "stack": {
+            "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+            "backend": ["Node.js", "Prisma"],
+            "db": ["PostgreSQL"]
+        },
+        "features": [
+            "Diseño de interfaz intuitiva",
+            "Página web interactiva",
+            "Personalización del contenido"
+        ],
+        "images": [
+            "/images/jardin-de-los-suenos/home.png",
+            "/images/jardin-de-los-suenos/architecture.png"
+        ],
+        "links": {
+            "demo": "https://jardindelosouenos.com",
+            "frontendRepo": "https://github.com/pablocelva/jardin-de-los-suenos",
+            "backendRepo": "https://github.com/pablocelva/jardin-de-los-suenos-backend",
+            "docs": "/projects/jardin-de-los-suenos-website-full-stack"
+        },
+        "services": ["frontend", "backend"],
+        "highlight": true
+    }
+]

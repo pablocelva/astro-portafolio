@@ -1,0 +1,30 @@
+---
+import proyectos from "../data/proyectos.json";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Proyectos">
+  <h1>Proyectos</h1>
+
+  <ul>
+    {proyectos.map(project => (
+      <li>
+        <strong>{project.title}</strong>
+        <p>{project.shortDescription}</p>
+        <a href={`/projects/${project.slug}`}>Ver</a>
+        <a href={project.links.demo}>Demo</a>
+        <a href={project.links.docs}>Docs</a>
+        <a href={project.links.frontendRepo}>Frontend</a>
+        <a href={project.links.backendRepo}>Backend</a>
+        <ul>
+          {project.features.map(feature => (
+            <li>{feature}</li>
+          ))}
+        </ul>
+        <img src={project.images[0]} alt={project.title} />
+        <img src={project.images[1]} alt={project.title} />
+        <p>{project.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

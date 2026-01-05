@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import projects from "../data/proyectos.json";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<Layout title="Proyectos · Pablo Lambert">
+  <section class="services-section">
+    <h1>Proyectos</h1>
+    <p class="subtitle">
+      Experiencias digitales, diseños, experiencias de usuario y más.
+    </p>
+
+    <div class="services-grid">
+      {projects.map(project => (
+        <ProjectCard {...project} />
+      ))}
+    </div>
+  </section>
+</Layout>

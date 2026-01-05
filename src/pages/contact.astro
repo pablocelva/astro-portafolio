@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contacto · Pablo Lambert">
+  <section class="contact-hero">
+    <h1>Contacto</h1>
+    <p>
+      ¿Tienes un proyecto, idea o problema que resolver?
+      Conversemos.
+    </p>
+  </section>
+
+  <section class="contact-grid">
+    <!-- FORM -->
+    <form class="contact-form">
+      <label>
+        Nombre
+        <input type="text" placeholder="Tu nombre" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" placeholder="correo@email.com" required />
+      </label>
+
+      <label>
+        Mensaje
+        <textarea rows="5" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+      </label>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <h3>También puedes encontrarme en</h3>
+
+      <ul>
+        <li>
+          <strong>Email</strong><br />
+          <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a>
+        </li>
+
+        <li>
+          <strong>GitHub</strong><br />
+          <a href="https://github.com/pablocelva" target="_blank">
+            github.com/pablocelva
+          </a>
+        </li>
+
+        <li>
+          <strong>LinkedIn</strong><br />
+          <a href="https://www.linkedin.com/in/pablolambert/" target="_blank">
+            linkedin.com/in/pablolambert/
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</Layout>
