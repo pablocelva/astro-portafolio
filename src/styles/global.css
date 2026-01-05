@@ -22,7 +22,7 @@ body {
   /* background: var(--bg); */
   color: var(--text);
   line-height: 1.6;
-  padding: 1em;
+  /* padding: 1em; */
   background: linear-gradient(90deg, #1e043b, #650d23, #7b5490);
   background-size: 300% 300%;
   animation: gradient 7s alternate infinite;
