@@ -1,52 +1,19 @@
 [
     {
-        "id": "celvaprod",
-        "title": "CELVAPROD",
-        "slug": "celvaprod",
-        "type": ["frontend", "threejs"],
-        "status": "production",
-        "year": 2025,
-        "description": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
-        "shortDescription": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
-        "tags": ["React", "Three.js"],
-        "stack": {
-        "frontend": ["React", "Three.js", "Vite"],
-        "backend": ["None"],
-        "db": ["None"]
-        },
-        "features": [
-        "Modelos 3D interactivos",
-        "Animaciones suaves",
-        "Efectos de sombra"
-        ],
-        "images": [
-        "/images/celvaprod/home.png",
-        "/images/celvaprod/architecture.png"
-        ],
-        "links": {
-        "demo": null,
-        "frontendRepo": "https://github.com/...",
-        "backendRepo": "none",
-        "docs": "/projects/celvaprod"
-        },
-        "services": ["frontend", "threejs"],
-        "highlight": true
-    },
-    {
         "id": "flight-on-time",
-        "title": "FlightOnTime",
+        "title": "FlightOnTime - Full Stack con Machine Learning",
         "slug": "flight-on-time",
         "type": ["fullstack", "machine-learning"],
         "status": "mvp",
-        "year": 2025,
+        "year": 2026,
         "description": "Sistema predictivo que estima retrasos de vuelos usando datos históricos y modelos de Machine Learning.",
         "shortDescription": "Predicción de retrasos de vuelos con ML",
         "tags": ["ML", "Python", "Spring Boot", "ONNX", "FastAPI"],
         "stack": {
         "frontend": ["React", "Vite"],
         "backend": ["Java", "Spring Boot"],
-        "ml": ["Python", "scikit-learn"],
-        "db": ["PostgreSQL"]
+        "ml": ["Python", "scikit-learn", "ONNX", "FastAPI"],
+        "db": ["MySQL"]
         },
         "features": [
         "Predicción de retraso en tiempo real",
@@ -58,21 +25,120 @@
         "/images/flightontime/architecture.png"
         ],
         "links": {
-        "demo": null,
-        "frontendRepo": "https://github.com/...",
-        "backendRepo": "https://github.com/...",
-        "docs": "/projects/flight-on-time"
+        "demo": "https://github.com/Sts87/FlightOnTime/tree/feature/model-training",
+        "frontendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/model-training/frontend",
+        "backendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/backend",
+        "docs": "https://github.com/Sts87/FlightOnTime/blob/feature/model-training/README.md"
         },
-        "services": ["data-analysis", "backend", "ml"],
+        "services": ["data-analysis", "backend", "ml", "frontend"],
+        "highlight": true
+    },
+    {
+        "id": "celvaprod",
+        "title": "CELVAPROD - Landing Page",
+        "slug": "celvaprod",
+        "type": ["frontend", "threejs"],
+        "status": "production",
+        "year": 2025,
+        "description": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+        "shortDescription": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+        "tags": ["React", "Three.js", "Vite", "React Three Fiber", "3D Models", "Animations", "Environments"],
+        "stack": {
+        "frontend": ["React", "Three.js", "Vite", "React Three Fiber", "3D Models", "Animations", "Environments"],
+        "backend": ["None"],
+        "db": ["None"]
+        },
+        "features": [
+        "Modelos 3D interactivos",
+        "Animaciones suaves",
+        "Efectos de sombra y environments"
+        ],
+        "images": [
+        "/images/celvaprod/home.png",
+        "/images/celvaprod/architecture.png"
+        ],
+        "links": {
+        "demo": "https://celvaprod.com/",
+        "frontendRepo": "https://github.com/pablocelva/celvaprod-react-three-fiber",
+        "backendRepo": null,
+        "docs": "https://github.com/pablocelva/celvaprod-react-three-fiber/blob/main/README.md"
+        },
+        "services": ["frontend", "threejs", "3D Models", "Animations", "Environments"],
+        "highlight": true
+    },
+    {
+        "id": "casitagames-landing-page",
+        "title": "CasitaGames - Landing Page",
+        "slug": "casitagames-landing-page",
+        "type": ["frontend"],
+        "status": "production",
+        "year": 2025,
+        "description": "Landing page sencilla con React y CSS3 para estudio independiente de desarrollo de videojuegos.",
+        "shortDescription": "Landing page sencilla con React y CSS3 para estudio independiente de desarrollo de videojuegos.",
+        "tags": ["React", "CSS3", "JavaScript"],
+        "stack": {
+            "frontend": ["React", "CSS3", "JavaScript"],
+            "backend": ["None"],
+            "db": ["None"]
+        },
+        "features": [
+            "Diseño responsivo",
+            "React, CSS3, JavaScript y SEO",
+            "Página web sencilla"
+        ],
+        "images": [
+            "/images/casitagames/home.png",
+            "/images/casitagames/architecture.png"
+        ],
+        "links": {
+            "demo": "https://casitagames.xyz/",
+            "frontendRepo": "https://github.com/pablocelva/casitagames-website",
+            "backendRepo": null,
+            "docs": "https://github.com/pablocelva/casitagames-website/blob/main/README.md"
+        },
+        "services": ["frontend"],
+        "highlight": true
+    },
+    {
+        "id": "jardin-de-los-suenos-website-full-stack",
+        "title": "Jardin de los Sueños - Website Full Stack",
+        "slug": "jardin-de-los-suenos-website-full-stack",
+        "type": ["frontend", "backend"],
+        "status": "mvp",
+        "year": 2025,
+        "description": "Diseño y desarrollo de una página web interactiva con contenido personalizado y experiencia de usuario.",
+        "shortDescription": "Página web interactiva con contenido personalizado y experiencia de usuario.",
+        "tags": ["React", "AntDesign", "Node.js", "Express", "PostgreSQL", "Netlify", "Render"],
+        "stack": {
+            "frontend": ["React", "AntDesign"],
+            "backend": ["Node.js", "Express"],
+            "db": ["PostgreSQL", "Netlify", "Render"]
+        },
+        "features": [
+            "Diseño de interfaz intuitiva",
+            "Página web interactiva",
+            "Full stack development"
+        ],
+        "images": [
+            "/images/jardin-de-los-suenos/home.png",
+            "/images/jardin-de-los-suenos/architecture.png"
+        ],
+        "links": {
+            "demo": "https://jardin-de-los-suenos.netlify.app/",
+            "frontendRepo": "https://github.com/pablocelva/jardin-de-los-suenos-frontend",
+            "backendRepo": "https://github.com/pablocelva/ecommerce-jardin-de-los-suenos/tree/main/backend",
+            "docs": "https://github.com/pablocelva/ecommerce-jardin-de-los-suenos/blob/main/README.md"
+        },
+        "services": ["frontend", "backend", "fullstack"],
         "highlight": true
     },
     {
         "id": "help-app-ux-ui-design",
-        "title": "HelpApp",
+        "title": "HelpApp - UX/UI Design",
         "slug": "help-app-ux-ui-design",
         "type": ["ux", "ui"],
         "status": "design",
-        "year": 2025,
+        "year": 2024,
         "description": "Diseño de experiencia de usuario y interfaz para una aplicación de ayuda.",
         "shortDescription": "Diseño UX/UI para aplicación de ayuda.",
         "tags": ["Figma", "UI Design", "UX Research"],
@@ -91,45 +157,45 @@
             "/images/helpapp/ux-ui/architecture.png"
         ],
         "links": {
-            "demo": null,
+            "demo": "https://www.figma.com/proto/cxqtXQeRzSn3eBKaRVemSb/Prueba-UI---Handoff-HelpApp?content-scaling=fixed&kind=proto&node-id=2281-4736&page-id=2281%3A4545&scaling=scale-down&starting-point-node-id=2281%3A4736",
             "frontendRepo": null,
             "backendRepo": null,
-            "docs": "/projects/helpapp-ux-ui-design"
+            "docs": "https://www.behance.net/gallery/210468187/HelpApp-Portafolio-UXUI"
         },
-        "services": ["ux", "ui"],
+        "services": ["diseño", "ux", "ui", "prototipado"],
         "highlight": false
     },
     {
-        "id": "jardin-de-los-suenos-website-full-stack",
-        "title": "Jardin de los Sueños",
-        "slug": "jardin-de-los-suenos-website-full-stack",
-        "type": ["frontend", "backend"],
-        "status": "mvp",
-        "year": 2025,
-        "description": "Diseño y desarrollo de una página web interactiva con contenido personalizado y experiencia de usuario.",
-        "shortDescription": "Página web interactiva con contenido personalizado y experiencia de usuario.",
-        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+        "id": "naranjocalido-langing-page",
+        "title": "naranjocalido - Langing Page",
+        "slug": "naranjocalido-langing-page",
+        "type": ["frontend"],
+        "status": "production",
+        "year": 2024,
+        "description": "Landing page sencilla con HTML5 CSS3 y uso de video como background para artista musical con implementacion de video y links de redes sociales.",
+        "shortDescription": "Landing page sencilla con HTML5 CSS3 y uso de video como background para artista musical con implementacion de video y links de redes sociales.",
+        "tags": ["HTML5", "CSS3", "JavaScript", "Video"],
         "stack": {
-            "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-            "backend": ["Node.js", "Prisma"],
-            "db": ["PostgreSQL"]
+            "frontend": ["HTML5", "CSS3", "JavaScript", "Video"],
+            "backend": ["None"],
+            "db": ["None"]
         },
         "features": [
-            "Diseño de interfaz intuitiva",
-            "Página web interactiva",
-            "Personalización del contenido"
+            "Video de fondo",
+            "Diseño responsivo",
+            "HTML5, CSS3, JavaScript y SEO"
         ],
         "images": [
-            "/images/jardin-de-los-suenos/home.png",
-            "/images/jardin-de-los-suenos/architecture.png"
+            "/images/naranjocalido/home.png",
+            "/images/naranjocalido/architecture.png"
         ],
         "links": {
-            "demo": "https://jardindelosouenos.com",
-            "frontendRepo": "https://github.com/pablocelva/jardin-de-los-suenos",
-            "backendRepo": "https://github.com/pablocelva/jardin-de-los-suenos-backend",
-            "docs": "/projects/jardin-de-los-suenos-website-full-stack"
+            "demo": "https://pablocelva.github.io/naranjocalido/",
+            "frontendRepo": "https://github.com/pablocelva/naranjocalido",
+            "backendRepo": null,
+            "docs": "https://github.com/pablocelva/naranjocalido/blob/main/README.md"
         },
-        "services": ["frontend", "backend"],
+        "services": ["frontend"],
         "highlight": true
     }
 ]
