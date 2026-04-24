@@ -25,7 +25,7 @@
         "/images/flightontime/architecture.png"
         ],
         "links": {
-        "demo": "https://github.com/Sts87/FlightOnTime/tree/feature/model-training",
+        "demo": "https://flightontime.netlify.app/",
         "frontendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/model-training/frontend",
         "backendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/backend",
         "docs": "https://github.com/Sts87/FlightOnTime/blob/feature/model-training/README.md"
