@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import proyectos from "../../data/proyectos.json";
+import '../../styles/project-page.css';
 
 export async function getStaticPaths() {
   return proyectos.map(project => ({
@@ -12,39 +13,104 @@ export async function getStaticPaths() {
 const {
   title,
   description,
+  year,
+  status,
   tags = [],
-  content = {}
+  features = [],
+  images = [],
+  links = {},
+  stack = {}
 } = Astro.props;
 ---
 
 <Layout title={title}>
-  <article class="project-page">
-    <h1>{title}</h1>
-    <p>{description}</p>
+  <main class="project-container">
+    
+    <!-- HEADER -->
+    <header class="project-header">
+      <h1>{title}</h1>
+      <p class="project-description">{description}</p>
+      
+      <div class="project-meta">
+        <span><strong>Año:</strong> {year}</span>
+        <span><strong>Estado:</strong> {status}</span>
+      </div>
 
-    {tags.length > 0 && (
-      <ul class="tags">
-        {tags.map(tag => <li>{tag}</li>)}
-      </ul>
+      {tags.length > 0 && (
+        <ul class="tags">
+          {tags.map(tag => <li>{tag}</li>)}
+        </ul>
+      )}
+    </header>
+
+    <!-- ACTION BUTTONS -->
+    {(links.demo || links.frontendRepo || links.backendRepo || links.docs) && (
+      <section class="project-actions">
+        {links.demo && (
+          <a href={links.demo} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Ver Demo
+          </a>
+        )}
+        {links.frontendRepo && (
+          <a href={links.frontendRepo} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Frontend
+          </a>
+        )}
+        {links.backendRepo && (
+          <a href={links.backendRepo} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Backend
+          </a>
+        )}
+        {links.docs && (
+          <a href={links.docs} target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Docs
+          </a>
+        )}
+      </section>
     )}
 
-    <section>
-      <h2>Overview</h2>
-      <p>{content.overview}</p>
-      <p>{content.shortDescription}</p>
-      <p>{content.description}</p>
-      <p>{content.year}</p>
-      <p>{content.status}</p>
+    <!-- GALLERY -->
+    {images.length > 0 && (
+      <section class="project-gallery">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+          {images.map(img => (
+            <img src={img} alt={`Vista de ${title}`} loading="lazy" />
+          ))}
+        </div>
+      </section>
+    )}
 
+    <!-- FEATURES -->
+    {features.length > 0 && (
+      <section class="project-features">
+        <h2>Características Clave</h2>
+        <ul>
+          {features.map(feature => <li>{feature}</li>)}
+        </ul>
+      </section>
+    )}
+
+    <!-- STACK -->
+    <section class="project-stack">
+      <h2>Stack Tecnológico</h2>
+      <div class="stack-grid">
+        {Object.entries(stack).map(([category, technologies]) => {
+          // Filtrar valores vacíos o "None"
+          const validTechs = technologies.filter(t => t !== "None" && t !== "");
+          if (validTechs.length === 0) return null;
+
+          return (
+            <div class="stack-category">
+              <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+              <ul>
+                {validTechs.map(tech => <li>{tech}</li>)}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
     </section>
 
-    <section>
-      <h2>Stack</h2>
-      <ul>
-        {content.stack?.map(tech => (
-          <li>{tech}</li>
-        ))}
-      </ul>
-    </section>
-  </article>
+  </main>
 </Layout>

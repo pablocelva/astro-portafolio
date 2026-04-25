@@ -8,12 +8,11 @@
         "year": 2026,
         "description": "Sistema predictivo que estima retrasos de vuelos usando datos históricos y modelos de Machine Learning.",
         "shortDescription": "Predicción de retrasos de vuelos con ML",
-        "tags": ["ML", "Python", "Spring Boot", "ONNX", "FastAPI"],
+        "tags": ["Machine Learning", "Python", "Spring Boot", "ONNX", "FastAPI", "ApexCharts", "Java", "MySQL", "Rest API"],
         "stack": {
-        "frontend": ["React", "Vite"],
-        "backend": ["Java", "Spring Boot"],
-        "ml": ["Python", "scikit-learn", "ONNX", "FastAPI"],
-        "db": ["MySQL"]
+        "frontend": ["HTML5", "CSS3", "JavaScript", "ApexCharts"],
+        "backend": ["Java", "Spring Boot", "MySQL", "Rest API"],
+        "ml": ["Python", "scikit-learn", "ONNX", "FastAPI"]
         },
         "features": [
         "Predicción de retraso en tiempo real",
@@ -42,9 +41,9 @@
         "year": 2025,
         "description": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
         "shortDescription": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
-        "tags": ["React", "Three.js", "Vite", "React Three Fiber", "3D Models", "Animations", "Environments"],
+        "tags": ["React", "HTML5", "CSS3", "Three Fiber", "3D Models", "Animations", "Environments"],
         "stack": {
-        "frontend": ["React", "Three.js", "Vite", "React Three Fiber", "3D Models", "Animations", "Environments"],
+        "frontend": ["React", "HTML5", "CSS3", "Three Fiber", "3D Models", "Animations", "Environments"],
         "backend": ["None"],
         "db": ["None"]
         },
@@ -75,9 +74,9 @@
         "year": 2025,
         "description": "Landing page sencilla con React y CSS3 para estudio independiente de desarrollo de videojuegos.",
         "shortDescription": "Landing page sencilla con React y CSS3 para estudio independiente de desarrollo de videojuegos.",
-        "tags": ["React", "CSS3", "JavaScript"],
+        "tags": ["HTML5", "CSS3", "JavaScript", "React"],
         "stack": {
-            "frontend": ["React", "CSS3", "JavaScript"],
+            "frontend": ["HTML5", "CSS3", "JavaScript", "React"],
             "backend": ["None"],
             "db": ["None"]
         },
@@ -108,11 +107,10 @@
         "year": 2025,
         "description": "Diseño y desarrollo de una página web interactiva con contenido personalizado y experiencia de usuario.",
         "shortDescription": "Página web interactiva con contenido personalizado y experiencia de usuario.",
-        "tags": ["React", "AntDesign", "Node.js", "Express", "PostgreSQL", "Netlify", "Render"],
+        "tags": ["React", "AntDesign", "Node.js", "Express", "PostgreSQL", "Netlify", "Render", "Figma"],
         "stack": {
-            "frontend": ["React", "AntDesign"],
-            "backend": ["Node.js", "Express"],
-            "db": ["PostgreSQL", "Netlify", "Render"]
+            "frontend": ["React", "AntDesign", "Figma"],
+            "backend": ["Node.js", "Express", "PostgreSQL"]
         },
         "features": [
             "Diseño de interfaz intuitiva",
@@ -143,9 +141,7 @@
         "shortDescription": "Diseño UX/UI para aplicación de ayuda.",
         "tags": ["Figma", "UI Design", "UX Research"],
         "stack": {
-            "frontend": [],
-            "backend": [],
-            "db": []
+            "ux/ui": ["Figma", "UI Design", "UX Research"]
         },
         "features": [
             "Diseño de interfaz intuitiva",
