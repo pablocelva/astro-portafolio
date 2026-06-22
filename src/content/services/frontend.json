@@ -2,7 +2,7 @@
     "id": "frontend",
     "title": "Desarrollo Frontend",
     "description": "Interfaces modernas, accesibles y performantes.",
-    "tools": ["HTML", "CSS", "JS", "React", "Vue", "Astro"],
-    "useCases": ["Landing pages", "Dashboards", "Web apps"],
-    "tags": ["HTML", "CSS", "JS", "React", "Vue", "Astro"]
+    "tools": ["HTML5", "CSS3", "TypeScript", "JavaScript", "React", "Vue", "Astro", "Tailwind CSS", "Bootstrap", "Material UI", "Ant Design"],
+    "useCases": ["Landing pages", "Ecommerce", "Dashboards", "Web apps", "Responsive design", "UI/UX"],
+    "tags": ["HTML5", "CSS3", "TypeScript", "JavaScript", "React", "Vue", "Astro"]
 }

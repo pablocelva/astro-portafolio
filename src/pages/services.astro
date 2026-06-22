@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import servicios from "../data/servicios.json";
 import ServiceCard from "../components/ServiceCard.astro";
+//import servicios from "../data/servicios.json";
+import { getCollection } from 'astro:content';
+
+const servicios = await getCollection('services');
 ---
 
 <Layout title="Servicios · Pablo Lambert">
@@ -12,8 +15,8 @@ import ServiceCard from "../components/ServiceCard.astro";
     </p>
 
     <div class="services-grid">
-      {servicios.map(servicio => (
-        <ServiceCard {...servicio} />
+      {servicios.map((servicio) => (
+        <ServiceCard {...servicio.data} />
       ))}
     </div>
   </section>

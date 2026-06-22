@@ -17,7 +17,9 @@ const { data } = servicio;
 const {
   title,
   description,
-  details = []
+  useCases = [],
+  tags = [],
+  tools = []
 } = data;
 ---
 
@@ -26,25 +28,37 @@ const {
     <h1>{title}</h1>
     <p>{description}</p>
 
-    {/* Renderizado seguro: si details está vacío, no muestra nada */}
-    {details.length > 0 && (
-      <ul>
-        {details.map((item: string) => (
-          <li>{item}</li>
-        ))}
-      </ul>
+    {/* Renderizado seguro: si useCases está vacío, no muestra nada */}
+    {useCases.length > 0 && (
+      <div class="use-cases">
+        <h2>Use Cases</h2>
+        <ul>
+          {useCases.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
     )}
 
     {/* Opcional: Mostrar herramientas si quieres */}
-    {data.tools.length > 0 && (
+    {tools.length > 0 && (
       <div class="tools">
         <h2>Herramientas</h2>
         <ul>
-          {data.tools.map((tool: string) => (
+          {tools.map((tool: string) => (
             <li>{tool}</li>
           ))}
         </ul>
       </div>
+    )}
+
+    {/* Opcional: Mostrar tags si quieres */}
+    {tags.length > 0 && (
+        <span class="tags">
+        {tags.map((tag: string) => (
+          <li>{tag}</li>
+        ))}
+      </span>
     )}
   </section>
 </Layout>

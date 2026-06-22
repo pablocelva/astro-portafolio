@@ -2,7 +2,7 @@
     "id": "backend",
     "title": "Desarrollo Backend",
     "description": "APIs, Microservicios y base de datos.",
-    "tools": ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+    "tools": ["TypeScript", "Java", "Python", "Spring Boot", "Node.js", "Express", "FastAPI", "PostgreSQL", "MongoDB"],
     "useCases": ["APIs", "Microservicios", "Bases de datos"],
-    "tags": ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+    "tags": ["TypeScript", "Java", "Python", "Spring Boot", "Node.js", "Express", "FastAPI", "PostgreSQL", "MongoDB"]
 }

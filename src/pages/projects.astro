@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import projects from "../data/proyectos.json";
 import ProjectCard from "../components/ProjectCard.astro";
+//import projects from "../data/proyectos.json";
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+projects.sort((a, b) => b.data.year - a.data.year);
 ---
 
 <Layout title="Proyectos · Pablo Lambert">
@@ -12,8 +16,8 @@ import ProjectCard from "../components/ProjectCard.astro";
     </p>
 
     <div class="services-grid">
-      {projects.map(project => (
-        <ProjectCard {...project} />
+      {projects.map((project) => (
+        <ProjectCard {...project.data} />
       ))}
     </div>
   </section>
