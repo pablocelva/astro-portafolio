@@ -1,0 +1,33 @@
+{
+  "id": "flight-on-time",
+  "title": "FlightOnTime - Full Stack con Machine Learning",
+  "slug": "flight-on-time",
+  "type": ["fullstack", "machine-learning"],
+  "status": "mvp",
+  "year": 2026,
+  "description": "Sistema predictivo que estima retrasos de vuelos...",
+  "shortDescription": "Predicción de retrasos de vuelos con ML",
+  "tags": ["Machine Learning", "Python", "Spring Boot", "ONNX", "FastAPI", "ApexCharts", "Java", "MySQL", "Rest API"],
+  "stack": {
+    "frontend": ["HTML5", "CSS3", "JavaScript", "ApexCharts"],
+    "backend": ["Java", "Spring Boot", "MySQL", "Rest API"],
+    "ml": ["Python", "scikit-learn", "ONNX", "FastAPI"]
+  },
+  "features": [
+    "Predicción de retraso en tiempo real",
+    "API REST desacoplada",
+    "Modelo exportado a ONNX"
+  ],
+  "images": [
+    "/images/flightontime/home.png",
+    "/images/flightontime/architecture.png"
+  ],
+  "links": {
+    "demo": "https://flightontime.netlify.app/",
+    "frontendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/model-training/frontend",
+    "backendRepo": "https://github.com/Sts87/FlightOnTime/tree/feature/backend",
+    "docs": "https://github.com/Sts87/FlightOnTime/blob/feature/model-training/README.md"
+  },
+  "services": ["data-analysis", "backend", "ml", "frontend"],
+  "highlight": true
+}

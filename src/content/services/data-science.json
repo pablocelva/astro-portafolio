@@ -1,0 +1,8 @@
+{
+    "id": "data",
+    "title": "Análisis y Modelado de Datos",
+    "description": "Limpieza, análisis y modelado predictivo para toma de decisiones.",
+    "tools": ["Python", "Pandas", "scikit-learn"],
+    "useCases": ["Predicción", "Clasificación", "Dashboards"],
+    "tags": ["Python", "Pandas", "scikit-learn"]
+}

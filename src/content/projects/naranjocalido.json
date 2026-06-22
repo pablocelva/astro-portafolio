@@ -1,0 +1,33 @@
+{
+    "id": "naranjocalido-langing-page",
+    "title": "naranjocalido - Langing Page",
+    "slug": "naranjocalido-langing-page",
+    "type": ["frontend"],
+    "status": "production",
+    "year": 2024,
+    "description": "Landing page sencilla con HTML5 CSS3 y uso de video como background para artista musical con implementacion de video y links de redes sociales.",
+    "shortDescription": "Landing page sencilla con HTML5 CSS3 y uso de video como background para artista musical con implementacion de video y links de redes sociales.",
+    "tags": ["HTML5", "CSS3", "JavaScript", "Video"],
+    "stack": {
+        "frontend": ["HTML5", "CSS3", "JavaScript", "Video"],
+        "backend": ["None"],
+        "db": ["None"]
+    },
+    "features": [
+        "Video de fondo",
+        "Diseño responsivo",
+        "HTML5, CSS3, JavaScript y SEO"
+    ],
+    "images": [
+        "/images/naranjocalido/home.png",
+        "/images/naranjocalido/architecture.png"
+    ],
+    "links": {
+        "demo": "https://pablocelva.github.io/naranjocalido/",
+        "frontendRepo": "https://github.com/pablocelva/naranjocalido",
+        "backendRepo": null,
+        "docs": "https://github.com/pablocelva/naranjocalido/blob/main/README.md"
+    },
+    "services": ["frontend"],
+    "highlight": true
+}

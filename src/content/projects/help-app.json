@@ -1,0 +1,31 @@
+{
+    "id": "help-app-ux-ui-design",
+    "title": "HelpApp - UX/UI Design",
+    "slug": "help-app-ux-ui-design",
+    "type": ["ux", "ui"],
+    "status": "design",
+    "year": 2024,
+    "description": "Diseño de experiencia de usuario y interfaz para una aplicación de ayuda.",
+    "shortDescription": "Diseño UX/UI para aplicación de ayuda.",
+    "tags": ["Figma", "UI Design", "UX Research"],
+    "stack": {
+        "ux/ui": ["Figma", "UI Design", "UX Research"]
+    },
+    "features": [
+        "Diseño de interfaz intuitiva",
+        "Prototipos interactivos",
+        "Investigación UX"
+    ],
+    "images": [
+        "/images/helpapp/ux-ui/home.png",
+        "/images/helpapp/ux-ui/architecture.png"
+    ],
+    "links": {
+        "demo": "https://www.figma.com/proto/cxqtXQeRzSn3eBKaRVemSb/Prueba-UI---Handoff-HelpApp?content-scaling=fixed&kind=proto&node-id=2281-4736&page-id=2281%3A4545&scaling=scale-down&starting-point-node-id=2281%3A4736",
+        "frontendRepo": null,
+        "backendRepo": null,
+        "docs": "https://www.behance.net/gallery/210468187/HelpApp-Portafolio-UXUI"
+    },
+    "services": ["diseño", "ux", "ui", "prototipado"],
+    "highlight": false
+}

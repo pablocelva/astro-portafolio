@@ -1,0 +1,33 @@
+{
+    "id": "celvaprod",
+    "title": "CELVAPROD - Landing Page",
+    "slug": "celvaprod",
+    "type": ["frontend", "threejs"],
+    "status": "production",
+    "year": 2025,
+    "description": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+    "shortDescription": "Landing page interactiva con 3D para un estudio de producción y composicion musical.",
+    "tags": ["React", "HTML5", "CSS3", "Three Fiber", "3D Models", "Animations", "Environments"],
+    "stack": {
+    "frontend": ["React", "HTML5", "CSS3", "Three Fiber", "3D Models", "Animations", "Environments"],
+    "backend": ["None"],
+    "db": ["None"]
+    },
+    "features": [
+    "Modelos 3D interactivos",
+    "Animaciones suaves",
+    "Efectos de sombra y environments"
+    ],
+    "images": [
+    "/images/celvaprod/home.png",
+    "/images/celvaprod/architecture.png"
+    ],
+    "links": {
+    "demo": "https://celvaprod.com/",
+    "frontendRepo": "https://github.com/pablocelva/celvaprod-react-three-fiber",
+    "backendRepo": null,
+    "docs": "https://github.com/pablocelva/celvaprod-react-three-fiber/blob/main/README.md"
+    },
+    "services": ["frontend", "threejs", "3D Models", "Animations", "Environments"],
+    "highlight": true
+}

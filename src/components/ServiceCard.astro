@@ -10,7 +10,7 @@ const { id, title, description, tags = [] } = Astro.props;
 
   {tags.length > 0 && (
     <ul class="tags">
-      {tags.map(tag => <li>{tag}</li>)}
+      {tags.map((tag: string) => <li>{tag}</li>)}
     </ul>
   )}
 </article>

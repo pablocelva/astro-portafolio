@@ -1,0 +1,8 @@
+{
+    "id": "gamedevelopment",
+    "title": "Desarrollo de Videojuegos",
+    "description": "Creación de videojuegos para PC, consolas y dispositivos móviles.",
+    "tools": ["Unity", "Unreal Engine", "C#", "C++"],
+    "useCases": ["Videojuegos", "Simulaciones", "Realidad Virtual"],
+    "tags": ["Unity", "Unreal Engine", "C#", "C++"]
+}

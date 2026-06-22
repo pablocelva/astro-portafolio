@@ -1,0 +1,32 @@
+{
+    "id": "jardin-de-los-suenos-website-full-stack",
+    "title": "Jardin de los Sueños - Website Full Stack",
+    "slug": "jardin-de-los-suenos-website-full-stack",
+    "type": ["frontend", "backend"],
+    "status": "mvp",
+    "year": 2025,
+    "description": "Diseño y desarrollo de una página web interactiva con contenido personalizado y experiencia de usuario.",
+    "shortDescription": "Página web interactiva con contenido personalizado y experiencia de usuario.",
+    "tags": ["React", "AntDesign", "Node.js", "Express", "PostgreSQL", "Netlify", "Render", "Figma"],
+    "stack": {
+        "frontend": ["React", "AntDesign", "Figma"],
+        "backend": ["Node.js", "Express", "PostgreSQL"]
+    },
+    "features": [
+        "Diseño de interfaz intuitiva",
+        "Página web interactiva",
+        "Full stack development"
+    ],
+    "images": [
+        "/images/jardin-de-los-suenos/home.png",
+        "/images/jardin-de-los-suenos/architecture.png"
+    ],
+    "links": {
+        "demo": "https://jardin-de-los-suenos.netlify.app/",
+        "frontendRepo": "https://github.com/pablocelva/jardin-de-los-suenos-frontend",
+        "backendRepo": "https://github.com/pablocelva/ecommerce-jardin-de-los-suenos/tree/main/backend",
+        "docs": "https://github.com/pablocelva/ecommerce-jardin-de-los-suenos/blob/main/README.md"
+    },
+    "services": ["frontend", "backend", "fullstack"],
+    "highlight": true
+}

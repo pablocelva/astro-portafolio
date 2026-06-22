@@ -1,0 +1,8 @@
+{
+    "id": "frontend",
+    "title": "Desarrollo Frontend",
+    "description": "Interfaces modernas, accesibles y performantes.",
+    "tools": ["HTML", "CSS", "JS", "React", "Vue", "Astro"],
+    "useCases": ["Landing pages", "Dashboards", "Web apps"],
+    "tags": ["HTML", "CSS", "JS", "React", "Vue", "Astro"]
+}

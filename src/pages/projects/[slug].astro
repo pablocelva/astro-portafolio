@@ -1,26 +1,40 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import proyectos from "../../data/proyectos.json";
+import { getCollection } from 'astro:content';
 import '../../styles/project-page.css';
 
+// 1. Obtener todos los proyectos tipados desde Content Collections
+
+// 2. Generar las rutas estáticas
 export async function getStaticPaths() {
-  return proyectos.map(project => ({
-    params: { slug: project.slug },
-    props: project
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.data.slug },
+    props: { project }, // Pasamos el objeto completo tipado
   }));
 }
 
-const {
-  title,
-  description,
-  year,
-  status,
-  tags = [],
-  features = [],
-  images = [],
-  links = {},
-  stack = {}
-} = Astro.props;
+// 3. Obtener los props con tipos seguros
+const { project } = Astro.props;
+const { data } = project; // 'data' contiene todos los campos definidos en el schema
+
+// Desestructuración segura con valores por defecto (aunque el schema ya los exige)
+const { 
+  title, 
+  description, 
+  year, 
+  status, 
+  tags = [], 
+  features = [], 
+  images = [], 
+  links = { demo: null, frontendRepo: null, backendRepo: null, docs: null }, 
+  stack = {} 
+} = data;
+
+// Helper para filtrar tecnologías "None" o vacías con tipado explícito
+const getValidTechs = (techs: string[]) => {
+  return techs.filter((t: string) => t !== "None" && t !== "");
+};
 ---
 
 <Layout title={title}>
@@ -38,7 +52,8 @@ const {
 
       {tags.length > 0 && (
         <ul class="tags">
-          {tags.map(tag => <li>{tag}</li>)}
+          {/* Tipado explícito en el map */}
+          {tags.map((tag: string) => <li>{tag}</li>)}
         </ul>
       )}
     </header>
@@ -74,7 +89,7 @@ const {
       <section class="project-gallery">
         <h2>Galería</h2>
         <div class="gallery-grid">
-          {images.map(img => (
+          {images.map((img: string) => (
             <img src={img} alt={`Vista de ${title}`} loading="lazy" />
           ))}
         </div>
@@ -86,7 +101,7 @@ const {
       <section class="project-features">
         <h2>Características Clave</h2>
         <ul>
-          {features.map(feature => <li>{feature}</li>)}
+          {features.map((feature: string) => <li>{feature}</li>)}
         </ul>
       </section>
     )}
@@ -96,15 +111,16 @@ const {
       <h2>Stack Tecnológico</h2>
       <div class="stack-grid">
         {Object.entries(stack).map(([category, technologies]) => {
-          // Filtrar valores vacíos o "None"
-          const validTechs = technologies.filter(t => t !== "None" && t !== "");
+          // technologies es string[] gracias al schema z.record(z.array(z.string()))
+          const validTechs = getValidTechs(technologies);
+          
           if (validTechs.length === 0) return null;
 
           return (
             <div class="stack-category">
               <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
               <ul>
-                {validTechs.map(tech => <li>{tech}</li>)}
+                {validTechs.map((tech: string) => <li>{tech}</li>)}
               </ul>
             </div>
           );

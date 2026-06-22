@@ -1,19 +1,24 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import servicios from "../../data/servicios.json";
+import { getCollection } from 'astro:content';
+
 
 export async function getStaticPaths() {
+  const servicios = await getCollection('services');
   return servicios.map(servicio => ({
-    params: { id: servicio.id },
-    props: servicio
+    params: { id: servicio.data.id },
+    props: { servicio }, 
   }));
 }
+
+const { servicio } = Astro.props;
+const { data } = servicio;
 
 const {
   title,
   description,
   details = []
-} = Astro.props;
+} = data;
 ---
 
 <Layout title={title}>
@@ -21,10 +26,25 @@ const {
     <h1>{title}</h1>
     <p>{description}</p>
 
-    <ul>
-      {details.map(item => (
-        <li>{item}</li>
-      ))}
-    </ul>
+    {/* Renderizado seguro: si details está vacío, no muestra nada */}
+    {details.length > 0 && (
+      <ul>
+        {details.map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    )}
+
+    {/* Opcional: Mostrar herramientas si quieres */}
+    {data.tools.length > 0 && (
+      <div class="tools">
+        <h2>Herramientas</h2>
+        <ul>
+          {data.tools.map((tool: string) => (
+            <li>{tool}</li>
+          ))}
+        </ul>
+      </div>
+    )}
   </section>
 </Layout>

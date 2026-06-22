@@ -1,0 +1,8 @@
+{
+    "id": "backend",
+    "title": "Desarrollo Backend",
+    "description": "APIs, Microservicios y base de datos.",
+    "tools": ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+    "useCases": ["APIs", "Microservicios", "Bases de datos"],
+    "tags": ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+}

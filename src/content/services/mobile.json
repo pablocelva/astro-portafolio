@@ -1,0 +1,8 @@
+{
+    "id": "mobile",
+    "title": "Desarrollo Mobile",
+    "description": "Aplicaciones nativas e híbridas para iOS y Android.",
+    "tools": ["React Native", "Kotlin", "Android Studio", "Swift"],
+    "useCases": ["Apps nativas", "Apps híbridas"],
+    "tags": ["React Native", "Kotlin", "Android Studio", "Swift"]
+}
