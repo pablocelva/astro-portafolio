@@ -1,8 +1,12 @@
-<footer class="footer">
-  <div class="footer-content">
+---
+import styles from './Footer.module.css';
+---
+
+<footer class={styles.footer}>
+  <div class={styles['footer-content']}>
     <p>© {new Date().getFullYear()} Pablo Lambert</p>
 
-    <div class="footer-links">
+    <div class={styles['footer-links']}>
       <a href="https://github.com/pablocelva" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/pablolambert" target="_blank">LinkedIn</a>
       <a href="mailto:pablomartin.lambert@gmail.com">Email</a>

@@ -1,17 +1,22 @@
-<nav class="navbar">
-  <a href="/" class="logo">
+---
+import styles from "./Navbar.module.css";
+
+---
+
+<nav class={styles.navbar}>
+  <a href="/" class={styles.logo}>
     <h1>celva.dev</h1>
   </a>
 
   <!-- Botón mobile -->
-  <button class="menu-toggle" aria-label="Abrir menú">
+  <button class={styles.menuToggle} id ="menu-toggle" aria-label="Abrir menú">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
   <!-- Links -->
-  <ul class="nav-links">
+  <ul class={styles.navLinks} id="nav-links">
     <li><a href="/projects">Proyectos</a></li>
     <li><a href="/services">Servicios</a></li>
     <li><a href="/about">Sobre mí</a></li>
@@ -20,8 +25,8 @@
 </nav>
 
 <script>
-  const toggle = document.querySelector(".menu-toggle");
-  const links = document.querySelector(".nav-links");
+  const toggle = document.getElementById("menu-toggle");
+  const links = document.getElementById("nav-links");
 
   toggle?.addEventListener("click", () => {
     toggle.classList.toggle("open");
